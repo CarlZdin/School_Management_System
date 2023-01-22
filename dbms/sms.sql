@@ -27,8 +27,8 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `listsubject` (
   `code` varchar(255) NOT NULL,
-  `sub` varchar(255) NOT NULL,
-  `num` int(255) NOT NULL
+  `subject` varchar(255) NOT NULL,
+  `numberstudents` int(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- Table structure for table `addstaff`
