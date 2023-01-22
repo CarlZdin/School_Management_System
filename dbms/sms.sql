@@ -23,6 +23,23 @@ SET time_zone = "+00:00";
 
 -- --------------------------------------------------------
 
+-- Table structure for table `listsubject`
+
+CREATE TABLE `listsubject` (
+  `code` varchar(255) NOT NULL,
+  `sub` varchar(255) NOT NULL,
+  `num` int(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- Table structure for table `addstaff`
+
+CREATE TABLE `addstaff` (
+  `id` int(255) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `spec` varchar(255) NOT NULL,
+  `department` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 --
 -- Table structure for table `addteacher`
 --
