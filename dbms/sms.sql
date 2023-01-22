@@ -26,7 +26,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `listsubject`
 
 CREATE TABLE `listsubject` (
-  `code` varchar(255) NOT NULL,
+  `code` varchar(255) NOT NULL PRIMARY KEY,
   `subject` varchar(255) NOT NULL,
   `numberstudents` int(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -34,7 +34,7 @@ CREATE TABLE `listsubject` (
 -- Table structure for table `addstaff`
 
 CREATE TABLE `addstaff` (
-  `id` int(255) NOT NULL,
+  `id` int(255) NOT NULL PRIMARY KEY,
   `name` varchar(255) NOT NULL,
   `spec` varchar(255) NOT NULL,
   `department` varchar(255) NOT NULL
@@ -45,7 +45,7 @@ CREATE TABLE `addstaff` (
 --
 
 CREATE TABLE `addteacher` (
-  `id` int(255) NOT NULL,
+  `id` int(255) NOT NULL PRIMARY KEY,
   `name` varchar(255) NOT NULL,
   `spec` varchar(255) NOT NULL,
   `subject` varchar(255) NOT NULL
@@ -58,7 +58,7 @@ CREATE TABLE `addteacher` (
 --
 
 CREATE TABLE `feesubmit` (
-  `id` int(255) NOT NULL,
+  `id` int(255) NOT NULL PRIMARY KEY,
   `name` varchar(255) NOT NULL,
   `monthname` varchar(255) NOT NULL,
   `annual` int(255) NOT NULL,
@@ -86,7 +86,7 @@ INSERT INTO `feesubmit` (`id`, `name`, `monthname`, `annual`, `monthly`, `sport`
 --
 
 CREATE TABLE `reportcard` (
-  `id` int(255) NOT NULL,
+  `id` int(255) NOT NULL PRIMARY KEY,
   `name` varchar(255) NOT NULL,
   `class` varchar(255) NOT NULL,
   `phy` int(255) NOT NULL,
@@ -117,7 +117,7 @@ INSERT INTO `reportcard` (`id`, `name`, `class`, `phy`, `chem`, `math`, `rollnum
 --
 
 CREATE TABLE `stureg` (
-  `id` int(255) NOT NULL,
+  `id` int(255) NOT NULL PRIMARY KEY,
   `name` varchar(255) NOT NULL,
   `fname` varchar(255) NOT NULL,
   `phone` int(255) NOT NULL,
