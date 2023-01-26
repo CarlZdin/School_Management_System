@@ -2,3 +2,5 @@
 In this improved School Management System, we have added two new features to the system :
 1. Staff's Module
 2. Subject List
+3. Updating GUI
+4. Enhance DBMS
